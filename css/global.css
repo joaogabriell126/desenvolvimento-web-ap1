@@ -75,23 +75,25 @@ header {
 }
 
 @media (max-width: 768px) { /* Um breakpoint para tablets/celulares grandes */
-    header{
-        height: 60vh;
+    header {
         flex-direction: column;
-        padding: 1rem 0rem;
-        align-items: center;
-
+        height: auto;           
+        padding: 1.5rem 1rem;   
+        gap: 1.5rem;            
     }
 
+    /* 2. Altera o container da direita para um layout vertical também */
     .container-header {
-    flex-direction: column;
-    text-align: center;
-}
+        flex-direction: column; 
+        gap: 1.5rem;            
+    }
 
+    /* 3. Ajusta a lista de links da navegação */
     .container-header nav ul {
-    flex-direction: column;
-    justify-content: center;
-}
+        flex-direction: column; 
+        align-items: center;    
+        gap: 1rem;             
+    }
 }
 
 /* ==============================
