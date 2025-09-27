@@ -15,9 +15,15 @@ main .game-title-section img {
     width: 50%;
 }
 
-main h2,
-main h3 {
+
+
+.left-column h2,
+h3 {
     margin-bottom: 1rem;
+    font-family: 'VT323', monospace;
+}
+
+.right-column h2{
     font-family: 'VT323', monospace;
 }
 
@@ -40,8 +46,8 @@ main ul li {
 .comment-header {
     color: #ff4d4d;
     font-family: 'VT323', monospace;
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-size: 1.5rem;
+    line-height: 1.5;
     display: flex;
     justify-content: space-between;
 }
@@ -69,5 +75,9 @@ main ul li {
     .left-column,
     .right-column {
         width: 100%; 
+    }
+
+    .btn{
+        width: 100%;
     }
 }
