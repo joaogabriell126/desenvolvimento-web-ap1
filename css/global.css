@@ -76,6 +76,20 @@ header {
 
 
 /* ==============================
+    MAIN
+   ============================== */
+main {
+    border-right: 2px solid #333;
+    border-left: 2px solid #333;
+    margin: auto;
+    min-height: 74vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0A0A0A;
+    width: 65vw;
+}
+
+/* ==============================
     Footer
    ============================== */
 
@@ -92,14 +106,21 @@ footer {
     color: #ff4d4d;
 }
 
-h1 {
+.page-title {
     color: #da032a;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    font-family: 'VT323', monospace;
+    font-size: 3.3rem;
 }
 
 .btn {
     font-family: 'VT323', monospace;
     background-color: var(--dark-red);
     border: 2px solid var(--primary-red);
+    color: #fff;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
@@ -115,4 +136,21 @@ h1 {
 
 .btn--little {
     font-size: 1.3rem;
+}
+
+.btn--gray {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    font-size: 1.3em;
+    border: 1px solid #555;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn--gray:hover {
+    background-color: #ff0000;
+    color: #000;
 }
