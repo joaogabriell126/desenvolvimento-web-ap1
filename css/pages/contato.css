@@ -43,3 +43,10 @@ form {
     padding: 6px;
     resize: none;
 }
+
+@media (max-width: 768px) { /* Um breakpoint para tablets/celulares grandes */
+    form{
+        width: 100%;
+    }
+}
+}
