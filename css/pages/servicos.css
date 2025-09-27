@@ -1,7 +1,7 @@
 .service-main {
     background-color: transparent;
     border: none;
-    width: 100vw;
+    width: 100%;
     margin: 1rem 0;
     padding: 1rem 2rem;
 }
@@ -24,7 +24,7 @@
 }
 
 .case-card:hover {
-    transform: scale(1.05) rotate(-1deg);
+    transform: scale(1.05);
     box-shadow: 10px 10px 15px #ff000033;
     cursor: pointer;
 }

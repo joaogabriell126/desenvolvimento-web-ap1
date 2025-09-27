@@ -37,4 +37,5 @@ form {
 .input-box textarea {
     height: 3.5rem;
     padding: 6px;
+    resize: none;
 }

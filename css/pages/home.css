@@ -2,12 +2,12 @@ main .game-title-section img {
     width: 100%;
 }
 
-/* Primeira coluna (Esquerda) */
 .columns-content {
     display: flex;
     gap: 1rem;
 }
 
+/* Primeira coluna (Esquerda) */
 .left-column,
 .right-column {
     padding: 1.5rem;
@@ -15,7 +15,6 @@ main .game-title-section img {
     width: 50%;
 }
 
-main h1,
 main h2,
 main h3 {
     margin-bottom: 1rem;
@@ -60,4 +59,15 @@ main ul li {
     flex-direction: column;
     align-items: start;
     gap: 1rem;
+}
+
+@media (max-width: 768px) { /* Um breakpoint para tablets/celulares grandes */
+    .columns-content {
+        flex-direction: column; 
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%; 
+    }
 }

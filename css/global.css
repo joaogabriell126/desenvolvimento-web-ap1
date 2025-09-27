@@ -74,6 +74,24 @@ header {
     color: var(--primary-red);
 }
 
+@media (max-width: 768px) { /* Um breakpoint para tablets/celulares grandes */
+    header{
+        height: 70vh;
+        flex-direction: column;
+        padding: 1rem 0rem;
+        align-items: center;
+    }
+
+    .container-header {
+    flex-direction: column;
+    text-align: center;
+}
+
+    .container-header nav ul {
+    flex-direction: column;
+    justify-content: center;
+}
+}
 
 /* ==============================
     MAIN
@@ -87,6 +105,12 @@ main {
     flex-direction: column;
     background-color: #0A0A0A;
     width: 65vw;
+}
+
+@media (max-width: 600px) {
+    main{
+        width: 100vw;
+    }
 }
 
 /* ==============================
@@ -111,9 +135,14 @@ footer {
     text-align: center;
     border-bottom: 2px solid #333;
     margin-bottom: 1rem;
+    letter-spacing: 2px;
     padding-bottom: 0.5rem;
     font-family: 'VT323', monospace;
     font-size: 3.3rem;
+}
+
+.page-title--left {
+    text-align: start;
 }
 
 .btn {
@@ -147,7 +176,7 @@ footer {
     font-family: 'VT323', monospace;
     font-size: 1.3em;
     border: 1px solid #555;
-    transition: background-color 0.2s, color 0.2s;
+    transition: all 0.3s ease;
 }
 
 .btn--gray:hover {
