@@ -32,8 +32,8 @@ figcaption {
 
 @media (max-width: 600px) {
     .about-me-subtitle {
-        letter-spacing: 0.5px;
-        font-size: 1.7rem;
+        letter-spacing: 0px;
+        font-size: 1.6rem;
     }
 }
 
