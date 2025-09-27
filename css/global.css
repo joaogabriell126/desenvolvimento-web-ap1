@@ -76,10 +76,11 @@ header {
 
 @media (max-width: 768px) { /* Um breakpoint para tablets/celulares grandes */
     header{
-        height: 70vh;
+        height: 60vh;
         flex-direction: column;
         padding: 1rem 0rem;
         align-items: center;
+
     }
 
     .container-header {
