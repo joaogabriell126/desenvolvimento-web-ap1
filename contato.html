@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/pages/contato.css">
+    <!-- Importe de icons - Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- Import da fonte - Roboto e VT323 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,17 +42,17 @@
         <form action="#">
             <div class="input-box">
                 <label for="name">&gt; Nickname</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" placeholder="Digite o seu nome" required>
             </div>
 
             <div class="input-box">
                 <label for="email">&gt; Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
             </div>
 
             <div class="input-box">
                 <label for="story">&gt; Conte-nos a sua história</label>
-                <textarea name="story" id="story"></textarea>
+                <textarea name="story" id="story" placeholder="Comente o que aconteceu" required></textarea>
             </div>
             <button class="btn" type="submit">Enviar</button>
         </form>

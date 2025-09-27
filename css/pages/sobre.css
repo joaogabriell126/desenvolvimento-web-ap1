@@ -3,7 +3,7 @@ figcaption {
     font-family: 'VT323', monospace;
     font-size: 1.3rem;
     text-align: center;
-    color: #777676;
+    color: var(--page-title);
 }
 
 .about-me-section {
@@ -23,10 +23,18 @@ figcaption {
 
 .about-me-subtitle {
     border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
     font-family: 'VT323', monospace;
     padding-bottom: 0.5rem;
     letter-spacing: 2px;
     font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+    .about-me-subtitle {
+        letter-spacing: 0.5px;
+        font-size: 1.7rem;
+    }
 }
 
 .footer-text {
@@ -36,4 +44,7 @@ figcaption {
     color: #da032a;
 }
 
-/*
+.image-container img {
+    width: 100%;
+    height: auto; 
+}
