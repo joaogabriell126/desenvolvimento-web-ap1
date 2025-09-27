@@ -1,99 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #0a0a0a;
-    font-family: "Roboto", sans-serif;
-    background-image: url('https://www.transparenttextures.com/patterns/black-felt.png');
-}
-
-/*
-==============================
-CSS GLOBAIS - HEADER, FOOTER
-==============================
-*/
-
-/*
-==============================
-Inicio do Header
-==============================
-*/
-header {
-    height: 13vh;
-    font-size: 1.5rem;
-    font-family: 'VT323', monospace;
-    color: #fff;
-    background-color: #1E1E1E;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0rem 2rem;
-    border-bottom: 2px solid #333;
-}
-
-.logo {
-    font-family: 'VT323', monospace;
-    font-size: 2.5rem;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 2px 2px 0px #ff0000;
-}
-
-.container-header {
-    display: flex;
-    gap: 2.5rem;
-    align-items: center;
-}
-
-.container-header nav ul {
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
-}
-
-.container-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.container-header nav ul li a:hover {
-    transition: all 0.2s ease-in-out;
-    color: #ff0000;
-}
-
-.buy-button {
-    font-family: 'VT323', monospace;
-    color: #fff;
-    background-color: #9d0000;
-    text-decoration: none;
-    border: 2px solid #ff0000;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-    font-size: 1.5rem;
-    padding: 0.5rem 1.2rem;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.buy-button:hover {
-    background-color: #ff0000;
-    color: #000;
-    box-shadow: 0 0 15px #ff0000;
-    cursor: pointer;
-}
-
-/*
-==============================
-- Fim do Header 
-==============================
-- Início do Footer
-==============================
-*/
-
-
 /* Main - Home */
 
 main {
@@ -124,14 +28,6 @@ main .game-title-section img {
     width: 50%;
 }
 
-h2,
-h3,
-p,
-blockquote,
-li {
-    color: #fff;
-}
-
 h1 {
     color: #da032a;
 }
@@ -144,7 +40,7 @@ main h3 {
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 3rem;
 }
 
 main p,
@@ -177,24 +73,6 @@ main ul li {
     padding-left: 1rem;
 }
 
-.comment-btn {
-    font-family: 'VT323', monospace;
-    background-color: #9d0000;
-    border: 2px solid #ff0000;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-    font-size: 1.35rem;
-    cursor: pointer;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-}
-
-.comment-btn:hover {
-    background-color: #ff0000;
-    color: #000;
-    box-shadow: 0 0 15px #ff0000;
-    cursor: pointer;
-}
 .comment-forum p{
     margin-bottom: 0;
 }
@@ -204,19 +82,6 @@ main ul li {
     align-items: start;
     gap: 1rem;
 }
-
-
-
-footer {
-    background-color: #1E1E1E;
-    height: 13vh;
-}
-
-
-@media (max-width: 480px) {
-
-}
-
 /*
 ==================================================
 SEGUNDA TELA - SOBRE 
@@ -362,7 +227,7 @@ QUARTA TELA - SOBRE
 
 .page-title {
     font-family: 'VT323', monospace;
-    font-size: 3.5em;
+    font-size: 3.3rem;
     color: #ff0000;
     text-align: center;
     text-shadow: 3px 3px 0px #3c0000;
