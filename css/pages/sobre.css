@@ -41,7 +41,7 @@ figcaption {
     font-family: 'VT323', monospace;
     font-size: 1.75rem;
     letter-spacing: 2px;
-    color: #da032a;
+    color: var(--highlight-red);
 }
 
 .image-container img {

@@ -46,7 +46,7 @@ main ul li {
 /* Segunda Coluna (Direita) */
 
 .comment-header {
-    color: #ff4d4d;
+    color: var(--highlight-secondary-red);
     font-family: 'VT323', monospace;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -57,7 +57,7 @@ main ul li {
 .comment-header .username {
     font-size: inherit; /* Faz com que ele tenha o mesmo tamanho do pai (font-sizer: 1.5rem)*/
     font-weight: normal;
-    margin: 0;            /* Remove qualquer margem padrão */
+    margin: 0; /* Remove qualquer margem padrão */
 }
 
 .comment-body {
@@ -83,9 +83,5 @@ main ul li {
     .left-column,
     .right-column {
         width: 100%; 
-    }
-
-    .btn{
-        width: 100%;
     }
 }

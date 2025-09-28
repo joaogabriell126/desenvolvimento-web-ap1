@@ -5,10 +5,14 @@
     --primary-red: #ff0000;
     --dark-red: #9d0000;
     --highlight-red: #da032a;
+    --highlight-secondary-red: #ff4d4d;
     --text-color: #fff;
+    --text-color-dark: #000;
+    --text-color-gray: #aaa;
     --background-dark: #0a0a0a;
     --background-medium: #1a1a1a;
     --border-color: #333;
+    --border-color-light: #555;
     --font-main: "Roboto", sans-serif;
     --font-special: 'VT323', monospace;
 }
@@ -151,7 +155,7 @@ footer h2{
 }
 
 .social-links a {
-    color: #fff;
+    color: var(--text-color);
     transition: all 0.3s ease;
 }
 
@@ -181,7 +185,7 @@ footer h2{
 
 /* Padrões textuais */
 .highlight {
-    color: #ff4d4d;
+    color: var(--highlight-secondary-red);
 }
 
 .page-title {
@@ -207,11 +211,12 @@ footer h2{
     font-family: 'VT323', monospace;
     background-color: var(--dark-red);
     border: 2px solid var(--primary-red);
-    color: #fff;
+    color: var(--text-color);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
@@ -226,17 +231,14 @@ footer h2{
 
 .btn--gray {
     background-color: var(--border-color);
-    color: #fff;
+    border: 1px solid var(--border-color-light);
+    font-size: 1.3em;
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    font-family: 'VT323', monospace;
-    font-size: 1.3em;
-    border: 1px solid #555;
-    transition: all 0.3s ease;
 }
 
 .btn--gray:hover {
     background-color: var(--primary-red);
-    color: #000;
+    color: var(--text-color-dark);
 }

@@ -26,7 +26,7 @@
     */
     background-color: var(--background-medium);
     border: 2px solid var(--border-color);
-    box-shadow: 5px 5px 0px #000;
+    box-shadow: 5px 5px 0px var(--text-color-dark);
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -65,7 +65,7 @@
 .case-info {
     font-family: 'Special Elite', monospace;
     font-size: 0.9rem;
-    color: #aaa;
+    color: var(--text-color-gray);
     margin-bottom: 0.9rem;
 }
 
