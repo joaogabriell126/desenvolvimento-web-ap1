@@ -15,8 +15,6 @@ main .game-title-section img {
     width: 50%;
 }
 
-
-
 .left-column h2,
 h3 {
     margin-bottom: 1rem;
@@ -52,6 +50,12 @@ main ul li {
     justify-content: space-between;
 }
 
+.comment-header .username {
+    font-size: inherit; /* Faz com que ele tenha o mesmo tamanho do pai (font-sizer: 1.5rem)*/
+    font-weight: normal;
+    margin: 0;            /* Remove qualquer margem padrão */
+}
+
 .comment-body {
     border-left: 2px solid var(--border-color);
     padding-left: 1rem;
@@ -60,10 +64,10 @@ main ul li {
 .comment-forum p{
     margin-bottom: 0;
 }
+
 .comment-forum{
     display: flex;
     flex-direction: column;
-    align-items: start;
     gap: 1rem;
 }
 
