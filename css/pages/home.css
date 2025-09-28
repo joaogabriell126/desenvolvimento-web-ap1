@@ -39,6 +39,10 @@ main ul li {
     width: 100%;
 }
 
+.gif-block--spaced{
+    margin-bottom: 1rem;
+}
+
 /* Segunda Coluna (Direita) */
 
 .comment-header {
