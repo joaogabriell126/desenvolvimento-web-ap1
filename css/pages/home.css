@@ -68,7 +68,7 @@ main ul li {
 .comment-forum{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.2rem;
 }
 
 @media (max-width: 768px) { /* Um breakpoint para tablets/celulares grandes */
