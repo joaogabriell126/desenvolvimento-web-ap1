@@ -199,6 +199,10 @@ footer h2{
     text-align: start;
 }
 
+.page-title--spaced{
+    margin-bottom: 2.5rem;
+}
+
 .btn {
     font-family: 'VT323', monospace;
     background-color: var(--dark-red);

@@ -1,5 +1,7 @@
 .service-main {
     background-color: transparent;
+    display: flex;
+    justify-content: center;
     border: none;
     width: 100%;
     margin: 1rem 0;
@@ -9,7 +11,7 @@
 
 .case-archive {
     display: flex;        
-    flex-wrap: wrap; /* 2. Permita a quebra de linha */
+    flex-wrap: wrap;
     gap: 1.8rem;
     justify-content: center;
 }
