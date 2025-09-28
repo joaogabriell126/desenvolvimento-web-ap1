@@ -53,7 +53,7 @@ main ul li {
 }
 
 .comment-body {
-    border-left: 1px solid #777676;
+    border-left: 2px solid var(--border-color);
     padding-left: 1rem;
 }
 

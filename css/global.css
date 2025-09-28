@@ -4,9 +4,10 @@
 :root {
     --primary-red: #ff0000;
     --dark-red: #9d0000;
+    --highlight-red: #da032a;
     --text-color: #fff;
     --background-dark: #0a0a0a;
-    --background-medium: #1E1E1E;
+    --background-medium: #1a1a1a;
     --border-color: #333;
     --font-main: "Roboto", sans-serif;
     --font-special: 'VT323', monospace;
@@ -35,19 +36,18 @@ header {
     height: 13vh;
     font-size: 1.5rem;
     font-family: 'VT323', monospace;
-    color: #fff;
     background-color: var(--background-medium);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0rem 2rem;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid var(--border-color);
 }
 
 .logo {
     font-family: 'VT323', monospace;
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
     text-shadow: 2px 2px 0px var(--primary-red);
 }
@@ -66,7 +66,7 @@ header {
 
 .container-header nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .container-header nav ul li a:hover {
@@ -74,7 +74,8 @@ header {
     color: var(--primary-red);
 }
 
-@media (max-width: 768px) { /* Um breakpoint para tablets/celulares grandes */
+/* Um breakpoint para tablets/celulares grandes - APENAS PARA O HEADER */
+@media (max-width: 768px) { 
     header {
         flex-direction: column;
         height: auto;           
@@ -100,16 +101,17 @@ header {
     MAIN
    ============================== */
 main {
-    border-right: 2px solid #333;
-    border-left: 2px solid #333;
+    border-right: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
     margin: auto;
     min-height: 74vh;
     display: flex;
     flex-direction: column;
-    background-color: #0A0A0A;
+    background-color: var(--background-dark);
     width: 65vw;
 }
 
+/* Um breakpoint para tablets/celulares grandes - APENAS PARA O MAIN */
 @media (max-width: 768px) {
     main{
         width: 100vw;
@@ -122,14 +124,14 @@ main {
    ============================== */
 
 footer {
-    background-color: #1E1E1E;
+    background-color: var(--background-medium);
     min-height: 13vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     padding: 1rem 2rem;
-    border-top: 2px solid #333;
+    border-top: 2px solid var(--border-color);
 }
 
 footer h2{
@@ -142,7 +144,7 @@ footer h2{
     font-size: 1.5rem;
     border-radius: 2rem;
     list-style: none;
-    background-color: #333;
+    background-color: var(--border-color);
     padding: 1rem 2rem;
     display: flex;
     gap: 1rem;
@@ -166,7 +168,8 @@ footer h2{
     align-items: center;
 }
 
-@media (max-width: 768px) { /* Um breakpoint para tablets/celulares grandes */
+/* Um breakpoint para tablets/celulares grandes - APENAS PARA O FOOTER*/
+@media (max-width: 768px) {
     footer{
         text-align: center;
     }
@@ -182,9 +185,9 @@ footer h2{
 }
 
 .page-title {
-    color: #da032a;
+    color: var(--highlight-red);
     text-align: center;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid var(--border-color);
     margin-bottom: 1rem;
     letter-spacing: 2px;
     padding-bottom: 0.5rem;
@@ -218,7 +221,7 @@ footer h2{
 }
 
 .btn--gray {
-    background-color: #333;
+    background-color: var(--border-color);
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -230,6 +233,6 @@ footer h2{
 }
 
 .btn--gray:hover {
-    background-color: #ff0000;
+    background-color: var(--primary-red);
     color: #000;
 }

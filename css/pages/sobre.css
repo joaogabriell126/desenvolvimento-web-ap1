@@ -15,14 +15,14 @@ figcaption {
 }
 
 .about-content-text {
-    border: 2px dashed #333;
+    border: 2px dashed var(--border-color);
     padding: 1.25rem;
     line-height: 1.8;
     text-align: justify;
 }
 
 .about-me-subtitle {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--border-color);
     margin-bottom: 1rem;
     font-family: 'VT323', monospace;
     padding-bottom: 0.5rem;

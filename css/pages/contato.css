@@ -23,7 +23,6 @@ form {
 .input-box {
     font-family: 'VT323', monospace;
     font-size: 1.35rem;
-    color: #fff;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
