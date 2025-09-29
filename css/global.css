@@ -1,5 +1,5 @@
 /* ==============================
-   PADRÔES DE CORES E ESTILOS
+   1.0 PADRÔES DE CORES E ESTILOS
    ============================== */
 :root {
     --primary-red: #ff0000;
@@ -17,9 +17,9 @@
     --font-special: 'VT323', monospace;
 }
 
-/* ==============================
-   RESET E ESTILOS GLOBAIS DO BODY
-   ============================== */
+/* ===================================
+   2.0 - RESET E ESTILOS GERAIS
+====================================== */
 * {
     margin: 0;
     padding: 0;
@@ -33,9 +33,11 @@ body {
     background-image: url('https://www.transparenttextures.com/patterns/black-felt.png');
 }
 
-/* ==============================
-   HEADER
-   ============================== */
+/* ===================================
+   3.0 - LAYOUT PRINCIPAL
+====================================== */
+
+/* --- 3.1 - Header --- */
 header {
     height: 13vh;
     font-size: 1.5rem;
@@ -78,7 +80,7 @@ header {
     color: var(--primary-red);
 }
 
-/* Um breakpoint para tablets/celulares grandes - APENAS PARA O HEADER */
+/* Adapta o header para layout de coluna em telas menores(celulares). */
 @media (max-width: 768px) { 
     header {
         flex-direction: column;
@@ -87,13 +89,13 @@ header {
         gap: 1.5rem;            
     }
 
-    /* 2. Altera o container da direita para um layout vertical também */
+    /* Altera o container da direita para um layout vertical também */
     .container-header {
         flex-direction: column; 
         gap: 1.5rem;            
     }
 
-    /* 3. Ajusta a lista de links da navegação */
+    /* Ajusta a lista de links da navegação */
     .container-header nav ul {
         flex-direction: column; 
         align-items: center;    
@@ -101,9 +103,7 @@ header {
     }
 }
 
-/* ==============================
-    MAIN
-   ============================== */
+/* --- 3.2 - Main Universal (Com algumas exceções de estilo com o main de serviços)--- */
 main {
     border-right: 2px solid var(--border-color);
     border-left: 2px solid var(--border-color);
@@ -115,7 +115,7 @@ main {
     width: 65vw;
 }
 
-/* Um breakpoint para tablets/celulares grandes - APENAS PARA O MAIN */
+/* Em telas menores, o conteúdo principal ocupa toda a largura e perde as bordas laterais. */
 @media (max-width: 768px) {
     main{
         width: 100vw;
@@ -172,22 +172,24 @@ footer h2{
     align-items: center;
 }
 
-/* Um breakpoint para tablets/celulares grandes - APENAS PARA O FOOTER*/
+/* Garante que o texto no footer fique centralizado em telas pequenas */
 @media (max-width: 768px) {
     footer{
         text-align: center;
     }
 }
 
-/* ==============================
-   COMPONENTES REUTILIZÁVEIS
-   ============================== */
+/* ===================================
+   4.0 - COMPONENTES REUTILIZÁVEIS
+====================================== */
 
-/* Padrões textuais */
+/* --- 4.1 - Classes de Texto --- */
 .highlight {
     color: var(--highlight-secondary-red);
 }
 
+/* --- 4.2 - Títulos de Página (.page-title) --- */
+/* Estilo base para os títulos principais de cada página. */
 .page-title {
     color: var(--highlight-red);
     text-align: center;
@@ -199,14 +201,18 @@ footer h2{
     font-size: 3.3rem;
 }
 
+/* Um modificador para alinhar o título para a esquerda. */
 .page-title--left {
     text-align: start;
 }
 
+/* Um modificador para adicionar mais espaçamento inferior. */
 .page-title--spaced{
     margin-bottom: 2.5rem;
 }
 
+/* --- 4.3 - Botões (.btn) --- */
+/* Estilo base para todos os botões do site. */
 .btn {
     font-family: 'VT323', monospace;
     background-color: var(--dark-red);

@@ -1,3 +1,8 @@
+/* ===================================
+   ESTILOS DA PÁGINA: CONTATO
+====================================== */
+
+/* --- Layout Geral da Página --- */
 .contact-main {
     display: flex;
     justify-content: center;
@@ -13,6 +18,7 @@
     letter-spacing: 1px;
 }
 
+/* --- Formulário de Contato --- */
 form {
     display: flex;
     flex-direction: column;
@@ -43,7 +49,11 @@ form {
     resize: none;
 }
 
-@media (max-width: 768px) { /* Um breakpoint para tablets/celulares grandes */
+/* ===================================
+   RESPONSIVIDADE: CONTATO
+====================================== */
+@media (max-width: 768px) {
+    /* Em telas menores, o formulário ocupará 100% do espaço */
     form{
         width: 100%;
     }

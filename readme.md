@@ -29,6 +29,8 @@ Devido ao tamanho do projeto, escolhi fazer uso separado de páginas CSS, nomead
 
 O arquivo **"global.css"** foi utilizado para reforçar a facilidade de manutenção e de uma organização do código. Nele, você escontrará o uso de componentes globais, como: body, header, footer, buttons e títulos (h1). Como eles possuem a mesma configuração, não faria sentido repeti-las em cada uma das páginas, assim, sendo fácil fazer alterações futuras sem a necessidade de muita procura.
 
+Tentei manter o projeto organizado através dos comentários, não apenas como forma de explicar certos usos, mas também como separador de bloco, tentando melhorar a legibilidade das páginas.
+
 ## Links Importantes
 - Link do site hospedado: [https://desenvolvimento-web-ap1.vercel.app](https://desenvolvimento-web-ap1.vercel.app).
 

@@ -1,3 +1,9 @@
+/* ===================================
+   ESTILOS DA PÁGINA: SERVIÇOS
+====================================== */
+
+/* --- Layout Geral da Página --- */
+/* Aqui, haverá algumas diferenças de estilo com relação ao estilo do main no global.css */
 .service-main {
     background-color: transparent;
     display: flex;
@@ -30,13 +36,13 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     max-width: 400px; 
 }
 
 .case-card:hover {
     transform: scale(1.05);
-    box-shadow: 5px 5px 10px var(--primary-red);
+    box-shadow: 5px 5px 5px var(--primary-red);
 }
 
 .case-card-image img {
@@ -50,8 +56,7 @@
 .case-card-content {
     padding: 1.25rem;
     flex-grow: 1;
-    /* Faz o conteúdo ocupar o espaço restante */
-    display: flex;
+    display: flex; /* Faz este bloco ocupar todo o espaço vertical restante no card. */
     flex-direction: column;
 }
 
@@ -73,5 +78,5 @@
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1.25rem;
-    flex-grow: 1;
+    flex-grow: 1; /* Garante que a descrição empurre o botão para o final do card. */
 }

@@ -1,13 +1,18 @@
+/* ===================================
+   ESTILOS DA PÁGINA: HOME
+====================================== */
+
+/* --- Banner Principal --- */
 main .game-title-section img {
     width: 100%;
 }
 
+/* --- Layout de Duas Colunas --- */
 .columns-content {
     display: flex;
     gap: 1rem;
 }
 
-/* Primeira coluna (Esquerda) */
 .left-column,
 .right-column {
     padding: 1.5rem;
@@ -15,15 +20,23 @@ main .game-title-section img {
     width: 50%;
 }
 
+/* Estilos para os títulos de seção dentro das colunas. */
 .left-column h2,
-h3 {
+.left-column h3,
+.right-column h2 {
     margin-bottom: 1rem;
     font-family: 'VT323', monospace;
 }
 
-.right-column h2{
-    font-family: 'VT323', monospace;
+.left-column h3 {
+    font-size: 1.5rem;
 }
+
+/* Estilos gerais para parágrafos e listas dentro do <main> da home. */
+.left-column p {
+    line-height: 1.6;
+}
+
 
 main p,
 main ul {
@@ -39,12 +52,12 @@ main ul li {
     width: 100%;
 }
 
+/* Modificador para adicionar espaçamento extra entre os GIFs. */
 .gif-block--spaced{
     margin-bottom: 1rem;
 }
 
-/* Segunda Coluna (Direita) */
-
+/* --- Seção de Comentários --- */
 .comment-header {
     color: var(--highlight-secondary-red);
     font-family: 'VT323', monospace;
@@ -75,7 +88,10 @@ main ul li {
     gap: 1.2rem;
 }
 
-@media (max-width: 768px) { /* Um breakpoint para tablets/celulares grandes */
+/* ===================================
+   RESPONSIVIDADE: HOME
+====================================== */
+@media (max-width: 768px) {
     .columns-content {
         flex-direction: column; 
     }
